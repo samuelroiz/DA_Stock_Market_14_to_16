@@ -5,3 +5,5 @@ By excel VBA scripting, it analyzed the stock market data to help break down var
 
 ## Back ground
 
+![Stock Market Analyzed Example](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_Outcome_Example.png)
+
