@@ -5,6 +5,8 @@ By excel VBA scripting, it analyzed the stock market data to help break down var
 
 ## Back ground
 
+Here is a picture of the outcome when it analyzes the stock market. As you can see, in the first column is the tickers. The tickers represent the stock market symbol. However, there are multiple of the same ticker. The next column over is the date. After the date column is the opening price of the stock. The three columns away from the opening price will be the closing price. The close price is when the closing price at the end of that year. One of the columns will be the yearly change from the opening price at the beginning of a given year to the closing price at the end of that year. The column will also have colors where red represents negative and green is positive.
+
 ![Stock Market Analyzed Example](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_Outcome_Example.png)
 
 ![Stock Market Analyzed 2014 Outcome](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2014.png)
