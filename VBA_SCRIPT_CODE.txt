@@ -1,0 +1,126 @@
+Sub StockMarketVBA_Final()
+Dim ws As Worksheet
+For Each ws In Worksheets
+
+ws.Cells(1, 9).Value = "Ticker"
+ws.Cells(1, 10).Value = "Yearly Change"
+ws.Cells(1, 11).Value = "Percent Change"
+ws.Cells(1, 12).Value = "Total Stock Volume"
+ws.Cells(2, 15).Value = "Greatest % Increase"
+ws.Cells(3, 15).Value = "Greatest % Decrease"
+ws.Cells(4, 15).Value = "Greatest Total Vol."
+ws.Cells(1, 17).Value = "Value"
+ws.Cells(1, 16).Value = "Ticker"
+
+ws.Cells(1, 14).Value = ""
+ws.Cells(2, 14).Value = ""
+ws.Cells(3, 14).Value = ""
+
+Dim ticker As String
+ticker = " "
+
+Dim tickerValue As Long
+tickerValue = 1
+
+Dim Last_Row As Long
+Last_Row = ws.Cells(Rows.Count, 1).End(xlUp).Row
+
+
+Dim open_range, close_range, price_end, price_total As Double
+open_range = 0
+close_range = 0
+percentage_total = 0
+price_total = 0
+
+Dim xmax As Double
+Dim xmin As Double
+Dim r As Range
+
+Dim summary_table As Integer
+'where Summary_Table row starts filling numbers
+summary_table = 2
+
+    For i = 2 To Last_Row
+        If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
+        tickerValue = tickerValue + 1
+        ticker = ws.Cells(i, 1).Value
+        ws.Cells(tickerValue, 9).Value = ticker
+        
+        'Recieve Data for Variables
+        open_range = open_range + ws.Cells(i, 3).Value
+        close_range = close_range + ws.Cells(i, 6).Value
+        price_total = open_range - close_range
+        total_stock_vol = total_stock_vol + ws.Cells(i, 7)
+        
+        
+        'For Percentage Difference of Yearly Change
+        
+        If (Abs(close_range)) > 0 Then
+        percentage_total = ((price_total) / (Abs(close_range))) * 100
+        End If
+        
+        'place values into excel
+        ws.Range("J" & summary_table).Value = price_total
+        ws.Range("K" & summary_table).Value = percentage_total
+        ws.Range("L" & summary_table).Value = total_stock_vol
+        
+        
+        'Convert Column into Percentage
+        ws.Range("K" & summary_table).NumberFormat = "0.00%"
+        
+        'Convert Column into Color
+        If ws.Range("J" & summary_table).Value < 0 Then
+        ws.Range("J" & summary_table).Interior.ColorIndex = 3 ' Red
+            
+        Else:
+        ws.Range("J" & summary_table).Interior.ColorIndex = 4 ' Green
+        End If
+        
+        ' Add one to the summary table row (moves onto next row if ticker is new)
+        summary_table = summary_table + 1
+            
+            
+        'Reset Variables to move onto next Ticker
+        open_range = 0
+        close_range = 0
+        price_total = 0
+        percentage_total = 0
+        total_stock_vol = 0
+        
+        Else:
+        open_range = open_range + ws.Cells(i, 3).Value
+        close_range = close_range + ws.Cells(i, 6).Value
+        price_total = open_range - close_range
+        
+        If (Abs(close_range) > 0) Then
+        percentage_total = ((price_total) / (Abs(close_range))) * 100
+        End If
+        
+        total_stock_vol = total_stock_vol + ws.Cells(i, 7)
+        
+    
+        End If
+        
+        
+        
+    Next i
+    
+    Set r = ws.Range("L2:L" & Rows.Count)
+    xmin = ws.Application.WorksheetFunction.Min(r)
+    xmax = ws.Application.WorksheetFunction.Max(r)
+    ws.Cells("4", "Q").Value = xmax
+    
+    Set r = ws.Range("K2:K" & Rows.Count)
+    xmin = ws.Application.WorksheetFunction.Min(r)
+    xmax = ws.Application.WorksheetFunction.Max(r)
+    ws.Cells("2", "Q").Value = xmax
+    ws.Cells("3", "Q").Value = xmin
+    
+    'Convert Column into Percentage
+    ws.Cells("1", "Q").NumberFormat = "0.00%"
+    ws.Cells("2", "Q").NumberFormat = "0.00%"
+    
+Next ws
+
+
+End Sub
