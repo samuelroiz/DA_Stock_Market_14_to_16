@@ -43,3 +43,5 @@ ws.Cells(3, 15).Value = "Greatest % Decrease"
 ws.Cells(4, 15).Value = "Greatest Total Vol."
 ws.Cells(1, 17).Value = "Value"
 ws.Cells(1, 16).Value = "Ticker"`
+
+Full Code found in --> https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/VBA_SCRIPT_CODE.txt
