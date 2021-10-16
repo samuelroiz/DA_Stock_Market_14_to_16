@@ -11,14 +11,18 @@ Here is a picture of the outcome when it analyzes the stock market. As you can s
 
 ## Images of 2014, 2015, and 2016 outcome
 
-# Stock Market Analyzed 2014 Outcome
+### Stock Market Analyzed 2014 Outcome
 ![Stock Market Analyzed 2014 Outcome](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2014.png)
 
 ![Stock Market Analyzed 2014 Outcome Continued](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2014_2nd_Section.png)
 
+### Stock Market Analyzed 2015 Outcome
+
 ![Stock Market Analyzed 2015 Outcome](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2015.png)
 
 ![Stock Market Analyzed 2015 Outcome Continued](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2015_2nd_Section.png)
+
+### Stock Market Analyzed 2016 Outcome
 
 ![Stock Market Analyzed 2016 Outcome](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2016.png)
 
