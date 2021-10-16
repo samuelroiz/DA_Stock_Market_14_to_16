@@ -30,18 +30,18 @@ Here is a picture of the outcome when it analyzes the stock market. As you can s
 
 ## CODE in VBA Script
 
-`Sub StockMarketVBA_Final()'
-'Dim ws As Worksheet'
-'For Each ws In Worksheets'
+Sub StockMarketVBA_Final()
+Dim ws As Worksheet
+For Each ws In Worksheets
 
-'ws.Cells(1, 9).Value = "Ticker"'
-'ws.Cells(1, 10).Value = "Yearly Change"'
-'ws.Cells(1, 11).Value = "Percent Change"'
-'ws.Cells(1, 12).Value = "Total Stock Volume"'
-'ws.Cells(2, 15).Value = "Greatest % Increase"'
-'ws.Cells(3, 15).Value = "Greatest % Decrease"'
-'ws.Cells(4, 15).Value = "Greatest Total Vol."'
-'ws.Cells(1, 17).Value = "Value"'
-'ws.Cells(1, 16).Value = "Ticker"`
+ws.Cells(1, 9).Value = "Ticker"
+ws.Cells(1, 10).Value = "Yearly Change"
+ws.Cells(1, 11).Value = "Percent Change"
+ws.Cells(1, 12).Value = "Total Stock Volume"
+ws.Cells(2, 15).Value = "Greatest % Increase"
+ws.Cells(3, 15).Value = "Greatest % Decrease"
+ws.Cells(4, 15).Value = "Greatest Total Vol."
+ws.Cells(1, 17).Value = "Value"
+ws.Cells(1, 16).Value = "Ticker"
 
 Full Code found in --> https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/VBA_SCRIPT_CODE.txt
