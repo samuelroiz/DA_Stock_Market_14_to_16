@@ -16,7 +16,7 @@ Here is a picture of the outcome when it analyzes the stock market. As you can s
 
 ![Stock Market Analyzed 2014 Outcome Continued](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2014_2nd_Section.png)
 
-The stock market in 2014 was the worst time to invest where it has the lowest percentage increase and the lowest total volume. What caused the year of 2014 to do worse than 2016 and 2015? The data was not given, but according to the research. It was oil. According to an article, the oil was reduced up to 40 percent which took a huge toll on the stock market. 
+The stock market in 2014 was the worst time to invest and the lowest percentage increase and the lowest total volume. What caused the year 2014 to do worse than 2016 and 2015? No data was given, but according to the research. It was oil. An article states that the oil reduced up to 40 percent.  It was a huge toll on the stock market. Mutual funds were also doing terrible in 2014. It dropped at least 40 percent. There are other small cases, but mutual funds and oil were the biggest assets of the stock market. 
 
 ### Stock Market Analyzed 2015 Outcome
 
