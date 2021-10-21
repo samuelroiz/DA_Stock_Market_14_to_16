@@ -24,6 +24,9 @@ The stock market in 2014 was the worst time to invest and the lowest percentage 
 
 ![Stock Market Analyzed 2015 Outcome Continued](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2015_2nd_Section.png)
 
+The stock market in 2015 was the best time to invest and the highest percentage increase. The ticker with the greatest percentage increase was SR. SR ticker symbolizes Spire Inc. Its company is known for gas utilities based on the east coast. It does not give a lot of information on why SR did so well. One of the possibilities could be the number of people moving to the east coast. 
+
+
 ### Stock Market Analyzed 2016 Outcome
 
 ![Stock Market Analyzed 2016 Outcome](https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/Images/Stock_Market_Analyzed_2016.png)
