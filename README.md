@@ -36,3 +36,5 @@ The stock market in 2015 was the best time to invest and the highest percentage 
 ## CODE in VBA Script
 
 Full Code found in --> https://github.com/samuelroiz/DA_Stock_Market_14_to_16/blob/main/VBA_SCRIPT_CODE.txt
+
+## NOTES
